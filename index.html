@@ -4,9 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      padding: 24px;
+      text-align: center;
+    }
+    .controls { margin-bottom: 12px; }
+    button {
+      padding: 8px 12px;
+      margin: 6px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #results { margin-top: 18px; white-space: pre-line; }
+    .score { font-weight: 600; margin-top: 8px; }
+  </style>
   
 </head>
 <body>
+  <h1> Rock Paper Scissors </h1>
+
+  <div class="controls">
+    <button id="rockBtn">Rock</button>
+    <button id="paperBtn">Paper</button>
+    <button id="scissorsBtn">Scissors</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <div id="status">
+    <div class="score">Player: <span id="playerScore">0</span> — Computer: <span id="computerScore">0</span></div>
+    <div id="results">Click a button to play.</div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
